@@ -9,7 +9,7 @@
     --lg: 18px;
   }
   body {
-    margin: 0;
+    margin: 20px ;
     font-family: 'Quicksand', sans-serif;
   }
 
@@ -17,6 +17,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
     gap: 26px;
+    place-content: center;
   }
 
   .product-card {
@@ -44,6 +45,18 @@
   .prd-info figure img{
     width: 45px;
     height: 45px;
+  }
+
+  .prd-info div p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin: 16px 0 4px 0;
+  }
+
+  .prd-info div p:nth-child(2){
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin: 0;
   }
 
   @media (max-width 640px) {
